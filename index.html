@@ -5,18 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebWizard</title>
+    <title>Заказать разработку сайта под ключ в Екатеринбурге от WebWizard</title>
+    <meta name="description" content="Нужен сайт для вашего бизнеса? Мы предлагаем услуги по созданию сайтов под ключ в Екатеринбурге. Наша команда разработает сайт от дизайн-проекта до его размещения на хостинге, начиная от 10 000 рублей.">
+    <meta name="keywords" content="создание сайтов, создание сайта, разработка сайтов, разработка сайта, создание сайтов Екатеринбург, изготовление сайтов, купить сайт">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <meta name="robots" content="none"/>
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 
 
 </head>
 
 <body>
     <div class="wrapper">
+        <div class="callback__icon hover-black">
+            <p>Заказать звонок</p>
+        </div>
+        <div class="callback__popup">
+            <div class="callback__popup-inner">
+                <div class="callback__popup-close"></div>
+                <h6>Заказать звонок</h6>
+                <p>Получите профессиональный бесплатный совет от наших консультантов и сэкономьте свое время и деньги.</p>
+                <form action="#" class="callback__popup-form">
+                    <input class="callback__popup-input callback__popup-name" type="text" placeholder="Ваше имя">
+                    <input class="callback__popup-input phone callback__popup-phone" type="text" placeholder="Номер телефона" >
+                    <label class="callback__popup-checkbox" >
+                        <input type="checkbox" checked required>
+                        <span class="fake-checkbox"></span>
+                        <span class="callback__popup-span">Я согласен с <span class="callback__popup-span-strong "> политикой конфидициальности.</span></span>
+                    </label>
+                    <button class="callback__popup-button hover-black">
+                        Заказать звонок
+                    </button>
+                </form>
+            </div>
+        </div>
         <div class="animation">
             <div class="animation__white"></div>
             <div class="animation__orange"></div>
@@ -31,16 +56,16 @@
                     <nav class="header__menu">
                         <ul class="header__menu-list">
                             <li class="header__menu-item">
-                                <a href="#services" class="header__menu-link">Услуги</a>
+                                <a href="#services" class="header__menu-link services-counter">Услуги</a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#staff" class="header__menu-link">Наши сотрудники</a>
+                                <a href="#staff" class="header__menu-link staff-counter">Наши сотрудники</a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#price" class="header__menu-link">Цены</a>
+                                <a href="#price" class="header__menu-link price-counter">Цены</a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#contacts" class="header__menu-link">Контакты</a>
+                                <a href="#contacts" class="header__menu-link contacts-counter">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -84,7 +109,7 @@
                             <p>Создадим <strong>сайт под ключ</strong>  </p>
                         </div>
                     </div>
-                    <a href="#contacts">
+                    <a href="#contacts" class="order-counter">
                         <div class="main__button">
                             <div class="order__button hover-black">
                                 
@@ -366,7 +391,7 @@
                             <input class="order__form-input" type="text" id="name" placeholder="Ваше имя">
 
                             <label class="order__form-label" for="phone">Номер телефона</label>
-                            <input id="phone" class="order__form-input " type="tel" placeholder="+7-(000)-000-00 00">
+                            <input id="phone" class="order__form-input phone" type="tel" placeholder="+7-(000)-000-00 00">
 
                             <label class="order__form-label" for="email">Email</label>
                             <input class="order__form-input" type="email" id="email" placeholder="Email">
@@ -379,10 +404,8 @@
                                 <label for="agry">Я согласен с </label> <span class="popup__agry"> политикой конфиденциальности.</span>
                                 <div class="order__agree-underline"></div>
                             </div>
-                            <button class="order__btn">
-                                <div class="order__send hover-white">
+                            <button class="order__btn hover-white">
                                     <p>Отправить заявку</p>
-                                </div>
                             </button>
                         </form>
                     </div>
@@ -654,6 +677,11 @@
     <script src="js/carousel.js"></script>
      <script src="js/sendForm.js"></script> 
      <script src="js/agryPopup.js"></script> 
+     <script src="js/analytics.js"></script>
+     <script src="js/callbackPopup.js"></script> 
+     <script src="js/callbackSendler.js"></script> 
+
+
 
 
 

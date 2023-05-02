@@ -11,7 +11,7 @@ const icons = document.querySelectorAll('.service__icon');
 
 
 const movePosition = slidesToScroll * itemWidth;
-const interval = 10000; 
+const interval = 6000; 
 
 itemsCarus.forEach((item) => {
   item.style.minWidth = `${itemWidth}px`;  

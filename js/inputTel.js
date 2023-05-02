@@ -1,11 +1,15 @@
-const phoneInput = document.getElementById('phone');
+// const phoneInput = document.getElementById('phone');
+const phoneInputs = document.querySelectorAll('.phone');
 
-phoneInput.addEventListener('input', function(event) {
-  let newValue = event.target.value.replace(/\D/g, '');
 
-  if (newValue.length > 12) {
-    newValue = newValue.slice(0, 12);
-  }
-  event.target.value = newValue;
+phoneInputs.forEach(function(phoneInput) {
+  phoneInput.addEventListener('input', function(event) {
+    let newValue = event.target.value.replace(/\D/g, '');
+
+    if (newValue.length > 12) {
+      newValue = newValue.slice(0, 12);
+    }
+    event.target.value = newValue;
+  });
 });
 

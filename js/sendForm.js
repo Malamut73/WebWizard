@@ -6,7 +6,7 @@ const agreeCheckbox = document.getElementById('agry');
 const orderUnderline = document.querySelector('.order__agree-underline');
 
 
-const button = document.querySelector('.order__send');
+const button = document.querySelector('.order__btn');
 
 button.addEventListener('click', (event) => {
   event.preventDefault(); 
